@@ -44,7 +44,7 @@ namespace Api.Controllers
                     desafios.Add(obj);
                 }
 
-                return Ok(desafios.OrderBy(d => d.DataDeCriacao));
+                return Ok(desafios.OrderBy(d => d.DataDeCriacao).Take(5));
             }
             catch (Exception)
             {
