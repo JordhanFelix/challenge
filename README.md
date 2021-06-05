@@ -6,7 +6,8 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-requisitos">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -31,6 +32,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O challange é uma api desenvolvida no processo seletivo da Take, o intuito é ter como prover dados para que o bot criado na plataforma da [Blip](https://account.blip.ai/) possa apresentar os 5 repositórios mais antigos da stack C# criados na Take.
+
+A api do projeto encontra-se publicado no Heroku neste <b><a href="https://challenge-take-api.herokuapp.com/api/v1/challenge">LINK</a></b> 
 
 ## 🔖 Requisitos
 
