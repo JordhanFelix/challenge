@@ -1,4 +1,4 @@
 <h1 align="center">
-    <a href="https://pt-br.reactjs.org/">🔗 Challenge Blip</a>
+    <p>🔗 Challenge Blip</p>
 </h1>
 <p align="center"> 🐱‍🏍 API + Blip Bot</p>
