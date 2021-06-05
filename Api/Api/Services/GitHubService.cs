@@ -1,5 +1,4 @@
 ﻿using Api.Models.GitHub;
-using Newtonsoft.Json;
 using Refit;
 using System;
 using System.Collections.Generic;
