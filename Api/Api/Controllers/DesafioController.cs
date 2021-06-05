@@ -21,7 +21,7 @@ namespace Api.Controllers
             this._gitHubService = gitHubService;
         }
 
-        [SwaggerResponse(statusCode: 200, description: "Sucesso", Type = typeof(DesafioViewModel))]
+        [SwaggerResponse(statusCode: 200, description: "Sucesso", Type = typeof(Carrossel))]
         [SwaggerResponse(statusCode: 500, description: "Erro interno")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
