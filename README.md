@@ -5,7 +5,7 @@
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
+ <a href="#requisito">Pré-requisitos</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#contribuicao">Contribuição</a> • 
  <a href="#licenc-a">Licença</a> • 
@@ -14,7 +14,7 @@
 
 
 
-### Pré-requisitos
+### [Pré-requisitos](#requisito)
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0). 
