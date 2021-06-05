@@ -9,7 +9,8 @@ namespace Api.Services
 {
     public interface IGitHubService
     {        
-        [Get("/users/takenet/repos")]
+        [Get("/orgs/takenet/repos")]
         Task<IList<GitHubViewModelResponse>> GetRepositorioGitAsync();
+        Task<IList<GitHubViewModelResponse>> GetFiveElements();
     }
 }

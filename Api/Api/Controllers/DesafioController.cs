@@ -1,7 +1,9 @@
 ﻿using Api.Models.Desafios;
+using Api.Models.Take;
 using Api.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
@@ -29,22 +31,9 @@ namespace Api.Controllers
 
             try
             {
-                List<DesafioViewModel> desafios = new List<DesafioViewModel>();
-                var dados = await _gitHubService.GetRepositorioGitAsync();
+                var resultado = await this.JsonCarrosel();
 
-                foreach (var item in dados.Where(x => (!String.IsNullOrEmpty(x.language)) && (x.language.ToUpper().Equals("C#"))))
-                {
-                    DesafioViewModel obj = new DesafioViewModel();
-
-                    obj.Titulo = item.full_name;
-                    obj.SubTitulo = item.description;
-                    obj.ImgUrl = item.owner.avatar_url;
-                    obj.DataDeCriacao = item.created_at;
-
-                    desafios.Add(obj);
-                }
-
-                return Ok(desafios.OrderBy(d => d.DataDeCriacao).Take(5));
+                return Ok(resultado);
             }
             catch (Exception)
             {
@@ -52,9 +41,39 @@ namespace Api.Controllers
                 return NotFound();
             }
 
+        }
+
+        private async Task<string> JsonCarrosel()
+        {
+            var dados = await _gitHubService.GetFiveElements();
+
+            Carrossel carousel = new Carrossel();
+
+            carousel.itemType = "application/vnd.lime.document-select+json";
+            carousel.items = new List<Header>();
 
 
+            foreach (var repo in dados)
+            {
+                Body body = new Body();
+                Header header = new Header();
+                header.header = new Body();
 
+                body.value = new Value();
+
+                body.type = "application/vnd.lime.media-link+json";
+
+                body.value.title = repo.full_name;
+                body.value.text = repo.description;
+                body.value.type = "image/jpeg";
+                body.value.uri = repo.owner.avatar_url;
+
+                header.header = body;
+                carousel.items.Add(header);
+            }
+            string result = JsonConvert.SerializeObject(carousel);
+
+            return result;
         }
     }
 }

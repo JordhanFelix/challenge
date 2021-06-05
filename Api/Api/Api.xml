@@ -22,5 +22,8 @@
         <member name="M:Refit.Implementation.Generated.ApiServicesIGitHubService.Api#Services#IGitHubService#GetRepositorioGitAsync">
             <inheritdoc />
         </member>
+        <member name="M:Refit.Implementation.Generated.ApiServicesIGitHubService.Api#Services#IGitHubService#GetFiveElements">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
