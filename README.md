@@ -35,13 +35,16 @@ O challange é uma api desenvolvida no processo seletivo da Take, o intuito é t
 
 A api do projeto encontra-se publicado no Heroku neste <b><a href="https://challenge-take-api.herokuapp.com/api/v1/challenge">LINK</a></b> 
 
+* Para testar o projeto é necessario criar uma conta no portal da blip e importar o fluxo contido na pasta [FLOW](https://github.com/JordhanFelix/challenge/tree/main/Flow). 
+
+
 ## 🔖 Requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) ou [Visual Studio Comunity](https://visualstudio.microsoft.com/pt-br/vs/community/)
 
-### 🎲 Rodando o Back End (servidor)
+### 🎲 Rodando o Back-End (servidor) em modo de desenvolvimento
 
 ```bash
 # Clone este repositório
@@ -62,7 +65,7 @@ $ dotnet run
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://challenge-take-api.herokuapp.com/api/v1/challenge) para mais detalhes.
 
 ---
 
